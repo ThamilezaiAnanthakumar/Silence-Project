@@ -10,7 +10,7 @@ The dataset is organized as follows:
   [Download Training Data](https://smu-my.sharepoint.com/:u:/g/personal/thamilezaia_smu_edu_sg/IQBbfHOUmbRmR6GwmUoo4zC3Ae0JHfrrZE8Ii21Qa43P2N4?e=1zknum)
 
 - **Test Data**: `test.mat` contains EMG signals and labels for evaluation on unseen words.  
-  [Download Test Data](https://smu-my.sharepoint.com/:u:/g/personal/thamilezaia_smu_edu_sg/IQBta0PFuKakQr8mJKbmyeh1AcQIo7hyHZkrO37TfqHIY?e=ahRJdh)
+  [Download Test Data](https://smu-my.sharepoint.com/:u:/g/personal/thamilezaia_smu_edu_sg/IQBta0PFuKakQr8mJKbmyeh1AcQIo7hyYXHZkrO37TfqHIY?e=ahRJdh)
 
 The training and test sets have no overlapping words to ensure robust evaluation.
 

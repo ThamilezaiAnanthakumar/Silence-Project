@@ -1,4 +1,4 @@
-# Ear-Canal EMG-Based Vowel Classification
+# Neuromuscular auricular signals based speech decoding
 
 ## Project Overview
 This project investigates the feasibility of decoding speech components from Neuromuscular auricular (NMA) signals recorded from the ear canal using a dual-channel configuration. Specifically, the model predicts whether a spoken word contains the vowel "A" using Neuromuscular auricular signals captured during word production. The dataset includes time-domain Neuromuscular auricula signals and spectrogram features, processed for sequential modeling with a BiLSTM network.

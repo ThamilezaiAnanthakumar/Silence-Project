@@ -1,22 +1,22 @@
 # Ear-Canal EMG-Based Vowel Classification
 
 ## Project Overview
-This project investigates the feasibility of decoding speech components from electromyography (EMG) signals recorded from the ear canal. Specifically, the model predicts whether a spoken word contains the vowel "A" using EMG signals captured during word production. The dataset includes time-domain EMG signals and spectrogram features, processed for sequential modeling with a BiLSTM network.
+This project investigates the feasibility of decoding speech components from Neuromuscular auricular (NMA) signals recorded from the ear canal using a dual-channel configuration. Specifically, the model predicts whether a spoken word contains the vowel "A" using Neuromuscular auricular signals captured during word production. The dataset includes time-domain Neuromuscular auricula signals and spectrogram features, processed for sequential modeling with a BiLSTM network.
 
 ## Dataset
 The dataset is organized as follows:
 
-- **Training Data**: `train.mat` contains EMG signals, spectrogram features, word labels, and binary target labels indicating the presence of the vowel "A".  
+- **Training Data**: `train.mat` contains Neuromuscular auricular signals, spectrogram features, word labels, and binary target labels indicating the presence of the vowel "A".  
   [Download Training Data](https://smu-my.sharepoint.com/:u:/g/personal/thamilezaia_smu_edu_sg/IQBbfHOUmbRmR6GwmUoo4zC3Ae0JHfrrZE8Ii21Qa43P2N4?e=1zknum)
 
-- **Test Data**: `test.mat` contains EMG signals and labels for evaluation on unseen words.  
+- **Test Data**: `test.mat` contains Neuromuscular auricular signals and labels for evaluation on unseen words.  
   [Download Test Data](https://smu-my.sharepoint.com/:u:/g/personal/thamilezaia_smu_edu_sg/IQBta0PFuKakQr8mJKbmyeh1AcQIo7hyYXHZkrO37TfqHIY?e=ahRJdh)
 
 The training and test sets have no overlapping words to ensure robust evaluation.
 
 ## Methodology
 1. **Data Preprocessing**:
-   - EMG signals are segmented based on word boundaries extracted from aligned audio.
+   - Neuromuscular auricular signals are segmented based on word boundaries extracted from aligned audio.
    - Time-frequency features are generated using Short-Time Fourier Transform (STFT) with 8-second windows and 50% overlap.
    - Spectrograms from both channels are vertically concatenated to form the input feature matrix.
    - Data is normalized using standard scaler fit on the training data.
@@ -34,6 +34,6 @@ The training and test sets have no overlapping words to ensure robust evaluation
    - Independent test set evaluation demonstrates generalization to unseen words.
 
 ## Results
-- The model demonstrates the feasibility of vowel classification from ear-canal EMG signals.
+- The model demonstrates the feasibility of vowel classification from ear-canal Neuromuscular auricular signals.
 - Cross-validation and aggregated metrics provide insights into performance variability due to the limited dataset size.
 

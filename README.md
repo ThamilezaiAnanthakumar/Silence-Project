@@ -20,7 +20,7 @@ The training and test sets have no overlapping words to ensure robust evaluation
 |------|------------|
 | `BiLSTM_v2.mlx` | Train BiLSTM and evaluate on independent test set |
 | `K_Fold.mlx` | Perform 5-fold cross-validation |
-| `train.mat` | Training dataset (signals, spectrograms, labels) |
+| `train.mat` | Training dataset (signals, spectrograms, word) |
 | `test.mat` | Independent test dataset |
 | `addaddVowelsMultiHot.m` | Utility function for vowel multi-hot encoding |
 
@@ -36,7 +36,16 @@ The training and test sets have no overlapping words to ensure robust evaluation
    
 
 ### `test.mat` contains:
-- Signals and labels for evaluation on unseen words  
+- Signals and labels for evaluation on unseen words
+  
+---
+To ensure smooth execution, place **all files** (scripts, functions, and datasets) inside the same directory.
+Update the dataset loading lines in both `BiLSTM_v2.mlx` and `K_Fold.mlx` as shown below:
+
+```matlab
+% Load Training and Testing Data
+trainData = load('train_dataset.mat'); % Please rename the files to match the names used in your dataset.
+testData  = load('test_dataset.mat');
 
 ## Methodology
 1. **Data Preprocessing**:

@@ -30,9 +30,10 @@ The training and test sets have no overlapping words to ensure robust evaluation
 
 ### `train.mat` contains:
 - Dual-channel neuromuscular auricular signals  
-- Spectrogram features  
+- Spectrogram features
+- Time domain signal
 - Word labels  
-- Binary vowel target labels  
+   
 
 ### `test.mat` contains:
 - Signals and labels for evaluation on unseen words  

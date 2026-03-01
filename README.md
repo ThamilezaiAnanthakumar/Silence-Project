@@ -41,9 +41,9 @@ The training and test sets have no overlapping words to ensure robust evaluation
 To ensure smooth execution, place **all files** (scripts, functions, and datasets) inside the same directory.
 Update the dataset loading lines in both `BiLSTM_v2.mlx` and `K_Fold.mlx` as shown below:
 
-```matlab
+matlab
 trainData = load('train_dataset.mat'); 
-testData  = load('test_dataset.mat'); ```
+testData  = load('test_dataset.mat'); 
 Please rename the files to match the names used in your dataset.
 
 ## Methodology

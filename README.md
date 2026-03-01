@@ -37,7 +37,14 @@ The training and test sets have no overlapping words to ensure robust evaluation
 
 ### `test.mat` contains:
 - Signals and labels for evaluation on unseen words
-  
+- 
+To ensure smooth execution, place **all files** (scripts, functions, and datasets) inside the same directory.
+Update the dataset loading lines in both `BiLSTM_v2.mlx` and `K_Fold.mlx` as shown below:
+
+```matlab
+trainData = load('train_dataset.mat'); 
+testData  = load('test_dataset.mat');
+Please rename the files to match the names used in your dataset.
 
 ## Methodology
 1. **Data Preprocessing**:

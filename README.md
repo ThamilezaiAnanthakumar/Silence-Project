@@ -22,7 +22,7 @@ The training and test sets have no overlapping words to ensure robust evaluation
 | `K_Fold.mlx` | Perform 5-fold cross-validation |
 | `train.mat` | Training dataset (signals, spectrograms, labels) |
 | `test.mat` | Independent test dataset |
-| `utilities_addaddVowelsMultiHot.m` | Utility function for vowel multi-hot encoding |
+| `addaddVowelsMultiHot.m` | Utility function for vowel multi-hot encoding |
 
 ---
 

@@ -14,6 +14,29 @@ The dataset is organized as follows:
 
 The training and test sets have no overlapping words to ensure robust evaluation.
 
+## 📁 File Description
+
+| File | Description |
+|------|------------|
+| `BiLSTM_v2.mlx` | Train BiLSTM and evaluate on independent test set |
+| `K_Fold.mlx` | Perform 5-fold cross-validation |
+| `train.mat` | Training dataset (signals, spectrograms, labels) |
+| `test.mat` | Independent test dataset |
+| `utilities_addaddVowelsMultiHot.m` | Utility function for vowel multi-hot encoding |
+
+---
+
+## Dataset
+
+### `train.mat` contains:
+- Dual-channel neuromuscular auricular signals  
+- Spectrogram features  
+- Word labels  
+- Binary vowel target labels  
+
+### `test.mat` contains:
+- Signals and labels for evaluation on unseen words  
+
 ## Methodology
 1. **Data Preprocessing**:
    - Neuromuscular auricular signals are segmented based on word boundaries extracted from aligned audio.
